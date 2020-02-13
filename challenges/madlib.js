@@ -1,7 +1,21 @@
 console.log('madlib script has loaded');
 
 // write this function!
-function madlib() {
+function madlib(userNoun, userVerb, userAdj) {
+  var result;
+  if(userVerb.length > userNoun.length){
+
+    result ="when the"+" " + userAdj;
+    result+=" "+"rain falls,"+" " + userNoun;
+    result+=" "+"begins to"+" " +userVerb;
+    return result;
+    
+  }else {
+  result ="the"+" " + userAdj;
+  result+=" "+userNoun +" "+ "loves to ";
+  result+=" "+userVerb +" "+"in the summer";
+  return result;
+}
 
 }
 
