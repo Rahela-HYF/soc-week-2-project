@@ -1,7 +1,8 @@
 console.log('devowel script has loaded');
 
 // write this function!
-function devowel() {
+function devowel(userText) {
+  return userText.replace(/[aeiouAEIOU]/g, "");
 }
 
 // remove all vowels, lower and upper case!
